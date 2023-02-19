@@ -44,8 +44,8 @@ YaMDB отправляет письмо с кодом подтверждения
 
 Клонируем репозиторий и переходим в него:
 ```
-git clone https://github.com/SvIvan/infra_sp2
-cd infra_sp2/api_yamdb
+git clone https://github.com/SvIvan/yamdb_final
+cd yamdb_final/api_yamdb
 ```
 Создаем и активируем виртуальное окружение:
 ```
