@@ -61,7 +61,7 @@ pip install -r requirements.txt
 ```
 cd infra
 ```
-Поднимаем контейнеры (infra_db_1, infra_web_1, infra_nginx_1):
+Поднимаем контейнеры (db, web, nginx):
 ```
 docker-compose up -d --build
 ```
