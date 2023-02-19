@@ -1,4 +1,8 @@
-![yamdb workflow](https://github.com/svivan/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg?branch=master?event=push)
+![yamdb workflow](https://github.com/svivan/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg?branch=master&event=push)
+
+Ссылки на проект:
+http://51.250.86.93/redoc/
+http://51.250.86.93/api/v1/
 
 # Проект API_YaMDb
 Проект YaMDb собирает отзывы (Review) пользователей на произведения (Title). Произведения делятся на категории: "Книги", "Фильмы", "Музыка". Список категорий (Category) может быть расширен.
