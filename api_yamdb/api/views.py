@@ -1,3 +1,13 @@
+from api.filters import TitlesFilter
+from api.mixins import ListCreateDestroyViewSet
+from api.permissions import (IsAdmin, IsAdminModeratorAuthorOrReadOnly,
+                             IsAdminOrReadOnly)
+from api.serializers import (CategorySerializer, CommentSerializer,
+                             GenreSerializer, ReadOnlyTitleSerializer,
+                             ReviewSerializer, SignUpDataSerializer,
+                             TitleSerializer, TokenSerializer,
+                             UserEditSerializer, UserSerializer)
+from django.contrib.auth import get_user_model
 from django.contrib.auth.tokens import default_token_generator
 from django.core.mail import send_mail
 from django.db.models import Avg
@@ -11,19 +21,7 @@ from rest_framework.filters import SearchFilter
 from rest_framework.permissions import IsAuthenticatedOrReadOnly
 from rest_framework.response import Response
 from rest_framework_simplejwt.tokens import AccessToken
-from django.contrib.auth import get_user_model
-
-from api.filters import TitlesFilter
-from api.mixins import ListCreateDestroyViewSet
-from api.permissions import (IsAdmin, IsAdminModeratorAuthorOrReadOnly,
-                             IsAdminOrReadOnly)
-from api.serializers import (CategorySerializer, CommentSerializer,
-                             GenreSerializer, ReadOnlyTitleSerializer,
-                             ReviewSerializer, SignUpDataSerializer,
-                             TitleSerializer, TokenSerializer,
-                             UserEditSerializer, UserSerializer)
 from reviews.models import Category, Genre, Review, Title
-
 
 User = get_user_model()
 
