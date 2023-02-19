@@ -62,6 +62,7 @@ jobs:
           with:
             push: true
             tags: svivan/api_yamdb:latest
+            file: api_yamdb/Dockerfile
 
   deploy:
     runs-on: ubuntu-latest
