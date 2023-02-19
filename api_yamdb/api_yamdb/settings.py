@@ -12,8 +12,8 @@ ALLOWED_HOSTS = [
     '51.250.86.93',
     'localhost',
     '127.0.0.1',
-    'ya-praktikum.ddns.net'
-    '*'
+    'ya-praktikum.ddns.net',
+    '*',
 ]
 
 
